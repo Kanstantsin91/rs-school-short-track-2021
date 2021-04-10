@@ -26,6 +26,7 @@ class Queue {
   enqueue(element) {
     if (!this.value) {
       this.value = element;
+      this.next = null;
     } else {
       let currentItem = this;
       while (currentItem.next) {
